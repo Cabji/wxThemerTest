@@ -2,6 +2,7 @@
 #define WXCHECKBOXTHEMETEST_H
 
 #include <wx/wx.h>
+#include <wx/filepicker.h>
 #include "wxThemer/wxThemer.h"
 #include "wxThemer/wxThemerCheckBox.h"
 
@@ -19,6 +20,8 @@ private:
     wxStaticText *m_staticText;
     wxCheckBox *m_checkBox;
     wxButton *m_button;
+    wxFilePickerCtrl *m_filePickerCtrl;
+    wxStaticBox *m_staticBox;
     wxArrayString m_arrayThemeNames = {"WinOS Light", "WinOS Dark"};
     size_t m_themeIndex = 0;
 };
